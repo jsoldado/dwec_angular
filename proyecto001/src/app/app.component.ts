@@ -15,6 +15,16 @@ export class AppComponent {
   sueldos = [1700, 1600, 1900];
   activo = true;
 
+  contador=1;
+
+  incrementar() {
+    this.contador++;
+  }
+
+  decrementar() {
+    this.contador--;
+  }
+
   esActivo() {
     if (this.activo)
       return 'Trabajador Activo';
